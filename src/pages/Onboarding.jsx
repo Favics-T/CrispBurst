@@ -24,7 +24,7 @@ const Onboarding = () => {
      
     <div className="flex flex-col md:flex-row items-center justify-center gap-4 px-4">
   {/* Image Section - Hidden on small screens */}
-  <div className="hidden md:block md:w-[40%]">
+  <div className=" md:block md:w-[40%]">
     <img
       src={OnboardingImage}
       alt="Onboarding"
