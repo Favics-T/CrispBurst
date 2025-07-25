@@ -11,7 +11,8 @@ const Hero = () => {
         No app downloads. No stress. Just chat, choose, and enjoy.
       </p>
       <a
-        href="https://wa.me/234XXXXXXXXXX?text=Hi%20I'm%20ready%20to%20order%20a%20pastry"
+        // href="https://wa.me/234XXXXXXXXXX?text=Hi%20I'm%20ready%20to%20order%20a%20pastry"
+        href="https://snapbite.vercel.app/"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-2 bg-green-500 text-white py-3 px-6 rounded-full text-lg hover:bg-green-600 transition"
