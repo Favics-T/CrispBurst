@@ -40,8 +40,8 @@ const PastriesVendor = () => {
     });
 
   return (
-    <div className="py-10 px-4 md:px-10 bg-gray-50 min-h-screen">
-      <h1 className="text-3xl font-bold text-center text-[#113F67] mb-6">Discover Pastry Vendors</h1>
+    <div className="py-10 px-4 md:px-10 flex flex-col gap-8  min-h-screen">
+      <h1 className="text-3xl font-bold text-centr text-[#113F67] mb-6">Discover Pastry Vendors</h1>
 
       <div className="flex flex-col sm:flex-row gap-4 justify-between items-center mb-6">
         <input
@@ -49,7 +49,7 @@ const PastriesVendor = () => {
           placeholder="Search vendors..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="w-full sm:w-1/2 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#113F67]"
+          className="w-full sm:w-1/2 px-4 py-2 border rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#113F67]"
         />
 
         <select
