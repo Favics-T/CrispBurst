@@ -5,13 +5,17 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Onboarding from './pages/Onboarding'
 import AuthPage from './pages/AuthPage'
+import PastriesVendor from './pages/PastriesVendor'
 
 const Layout = ()=>{
   return (
-    <div>
+    <div className=''>
       <Header />
-      <Outlet />
+    <div className='px-20 py-10'>
+ <Outlet />
       <Footer />
+    </div>
+     
     </div>
   )
 }
@@ -23,6 +27,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Layout />}>
           <Route path='home'  element={<Home />} />
+          <Route path='pastry' element={<PastriesVendor />}/>
           </Route>
           <Route  index element={<Onboarding />}/>
            <Route path='/signin' element={<AuthPage type="signin" />} />

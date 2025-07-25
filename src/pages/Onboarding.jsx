@@ -24,7 +24,7 @@ const Onboarding = () => {
      
      <div className='flex items-center justify-center gap-'>
 <div className='w-[50%] '>
-  <img src={OnboardingImage} alt=""  className='rounded-lg'/>
+  <img src={OnboardingImage} alt="Onboarding Image"  className='rounded-lg'/>
      
 </div>
   <div className="mt-16 w-[40%]  flex flex-col justify-center items-center gap-8 py-8">

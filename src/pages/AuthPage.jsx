@@ -1,9 +1,24 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const AuthPage = ({ type = 'signin' }) => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // simulate successful registration/login
+    if (type === 'signup') {
+      // normally you'd handle validation or API call here
+      navigate('/home');
+    } else {
+      // for sign in
+      navigate('/home');
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#113F67] text-white flex flex-col md:flex-row items-center justify-center px-6 sm:px-12 py-12 gap-10">
-      
       {/* Left Side (Branding) */}
       <div className="hidden md:flex flex-col w-4/10 gap-4 justify-center">
         <h1 className="text-4xl font-bold tracking-wide text-center">
@@ -18,47 +33,32 @@ const AuthPage = ({ type = 'signin' }) => {
           {type === 'signin' ? 'Sign In' : 'Sign Up'}
         </h2>
 
-        <form className="flex flex-col gap-4">
+        <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
           {type === 'signup' && (
             <>
               <div className="flex flex-col">
                 <label className="mb-1 text-sm font-medium">Enter full name</label>
-                <input
-                  type="text"
-                  className="p-3 rounded-md border border-gray-300 bg-white text-[#113F67] outline-none"
-                />
+                <input type="text" required className="p-3 rounded-md border border-gray-300 bg-white text-[#113F67] outline-none" />
               </div>
 
               <div className="flex flex-col">
                 <label className="mb-1 text-sm font-medium">Enter email</label>
-                <input
-                  type="email"
-                  className="p-3 rounded-md border border-gray-300 bg-white text-[#113F67] outline-none"
-                />
+                <input type="email" required className="p-3 rounded-md border border-gray-300 bg-white text-[#113F67] outline-none" />
               </div>
 
               <div className="flex flex-col">
                 <label className="mb-1 text-sm font-medium">Enter phone number</label>
-                <input
-                  type="tel"
-                  className="p-3 rounded-md border border-gray-300 bg-white text-[#113F67] outline-none"
-                />
+                <input type="tel" required className="p-3 rounded-md border border-gray-300 bg-white text-[#113F67] outline-none" />
               </div>
 
               <div className="flex flex-col">
                 <label className="mb-1 text-sm font-medium">Enter password</label>
-                <input
-                  type="password"
-                  className="p-3 rounded-md border border-gray-300 bg-white text-[#113F67] outline-none"
-                />
+                <input type="password" required className="p-3 rounded-md border border-gray-300 bg-white text-[#113F67] outline-none" />
               </div>
 
               <div className="flex flex-col">
                 <label className="mb-1 text-sm font-medium">Confirm password</label>
-                <input
-                  type="password"
-                  className="p-3 rounded-md border border-gray-300 bg-white text-[#113F67] outline-none"
-                />
+                <input type="password" required className="p-3 rounded-md border border-gray-300 bg-white text-[#113F67] outline-none" />
               </div>
             </>
           )}
@@ -67,18 +67,12 @@ const AuthPage = ({ type = 'signin' }) => {
             <>
               <div className="flex flex-col">
                 <label className="mb-1 text-sm font-medium">Enter email</label>
-                <input
-                  type="email"
-                  className="p-3 rounded-md border border-gray-300 bg-white text-[#113F67] outline-none"
-                />
+                <input type="email" required className="p-3 rounded-md border border-gray-300 bg-white text-[#113F67] outline-none" />
               </div>
 
               <div className="flex flex-col">
                 <label className="mb-1 text-sm font-medium">Enter password</label>
-                <input
-                  type="password"
-                  className="p-3 rounded-md border border-gray-300 bg-white text-[#113F67] outline-none"
-                />
+                <input type="password" required className="p-3 rounded-md border border-gray-300 bg-white text-[#113F67] outline-none" />
               </div>
             </>
           )}
@@ -110,7 +104,7 @@ const AuthPage = ({ type = 'signin' }) => {
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AuthPage
+export default AuthPage;
