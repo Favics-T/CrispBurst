@@ -8,11 +8,11 @@ const Onboarding = () => {
   return (
     <div className="bg-[#113F67 text-[#113f67] flex flex-col gap-8 px-4 sm:px-10 md:px-20 ">
       {/* Navbar */}
-      <nav className="flex items-center justify-between text-[#113F67] h-20 shadow-lg px-10 ">
-        <h1 className="text-2xl font-bold tracking-wider">CRISPBURST</h1>
+      <nav className="flex items-center justify-between text-[#113F67] h-20 shadow-lg md:px-10 px-3 ">
+        <h1 className="md:text-2xl font-bold tracking-wider">CRISPBURST</h1>
         
         <Link to='/signup'>
-       <button className="flex items-center gap-2 bg-[#113F67] text-white font-medium px-4 py-2 rounded-lg shadow hover:bg-[#e6e6e6] transition">
+       <button className="flex items-center gap-2 bg-[#113F67] text-white font-medium p-2 md:px-4 md:py-2 rounded-lg shadow hover:bg-[#e6e6e6] transition">
           <FaUser />
           
         </button>
