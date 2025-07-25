@@ -32,8 +32,9 @@ const Onboarding = () => {
         <p className="text-4xl text-center">
          Hot crust. Big taste. No stress
         </p>
-
+        <Link to='/'>
         <button className='bg-[#113f67] text-white px-2 rounded hover:bg-blue-950 cursor-pointer'>Order now</button>
+   </Link>
       </div>
      </div>
     
