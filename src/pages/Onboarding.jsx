@@ -36,9 +36,9 @@ const Onboarding = () => {
   <div className="w-full md:w-[40%] flex flex-col justify-center items-center gap-4 py-8 text-center">
     <h2 className="font-semibold text-center text-3xl md:text-6xl">Welcome to CrispBurst!</h2>
     <p className="text-lg md:text-2xl">Hot crust. Big taste. No stress</p>
-    <Link to="/">
+    <Link to="/signup">
       <button className="bg-[#113f67] text-white px-6 py-2 rounded hover:bg-blue-950 transition duration-300">
-        Order now
+        Get Started
       </button>
     </Link>
   </div>

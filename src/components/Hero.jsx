@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className="bg-yellow- py-16 px-6 text-center">
+    <section className=" py-16 px-44 text-center">
       <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
         Order Your Favorite Pastries Instantly on WhatsApp!
       </h1>

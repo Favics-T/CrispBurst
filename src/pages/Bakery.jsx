@@ -37,8 +37,8 @@ const Bakery = () => {
     <div className="py-8 px-4 md:px-12">
       <h1 className="text-3xl text-[#113F67] font-bold mb-6 text-cente">Explore Pastries Around</h1>
       
-      <div className="grid grid-cols-3 gap-8 justify-center">
-        {bakery.slice(0, 6).map((item, index) => (
+      <div className="grid md:grid-cols-3 gap-8 justify-center">
+        {bakery.slice(0, 3).map((item, index) => (
           <BakeryCard key={index} image={item.image} name={item.name} slogan={item.slogan} />
         ))}
       </div>
