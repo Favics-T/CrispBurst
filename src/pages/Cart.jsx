@@ -32,21 +32,18 @@ const Home = () => {
             {dummyCartItems.map((item) => (
               <li key={item.id} className="flex justify-between">
                 <span>{item.name}</span>
-                <span>₦{item.price}</span>
+                <span>₦{item.price.toLocaleString()}</span>
               </li>
             ))}
           </ul>
         )}
         <div className="mt-6 flex justify-between font-semibold">
           <span>Total:</span>
-          <span>₦{total}</span>
+          <span>₦{total.toLocaleString()}</span>
         </div>
         <button
           className="mt-6 w-full bg-[#113f67] text-white py-2 rounded hover:bg-blue-900"
-          onClick={() => {
-            // Optional: Redirect to WhatsApp or handle checkout
-            setShowCart(false);
-          }}
+          onClick={() => setShowCart(false)}
         >
           Proceed to Checkout
         </button>

@@ -11,7 +11,8 @@ import PastryDetails from './pages/PastryDetails'
 import VendorProfile from './pages/VendorProfile'
 import AllVendor from './pages/AllVendor'
 import Modal from './components/Modal'
-import { useCart } from './context/CartContext'
+import { useCart } from './context/ChatContext'
+import Pastries from './pages/Pastries'
 
 const Layout = () => {
   const [showCart, setShowCart] = useState(false);
@@ -77,6 +78,7 @@ const App = () => {
           <Route path='/' element={<Layout />}>
           <Route path='home'  element={<Home />} />
           <Route path='pastry' element={<PastriesVendor />}/>
+          <Route path='/pastries' element={<Pastries />}/>
           </Route>
           <Route  index element={<Onboarding />}/>
           {/* protected Route */}

@@ -1,8 +1,7 @@
-// src/pages/Product.js
-
 import React from 'react';
-import { product } from '../data/product'; // your updated data
-import { useCart } from '../context/CartContext';
+import { product } from '../data/product'; 
+import { useCart } from '../context/ChatContext';
+
 
 const Product = () => {
   const { addToCart } = useCart();
@@ -14,7 +13,7 @@ const Product = () => {
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14">
-        {product.slice(0,3).map((item) => (
+        {product.map((item) => (
           <div key={item.id} className="bg-white shadow rounded-lg overflow-hidden">
             <img src={item.image} alt={item.title} className="h-48 w-full object-cover" />
             <div className="p-4">
