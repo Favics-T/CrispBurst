@@ -12,14 +12,15 @@ const Header = ({onCartClick}) => {
       <div className='flex items-center justify-between text-[#113F67] h-20 shadow-lg px-10'>
      <Link to='/'>
      <h1 className='text-2xl font-bold tracking-wider'>CrispBurst</h1>
-     
-     </Link> 
+      </Link> 
 
      <div className='flex gap-6'>
       <Link to='/pastries'>
-      
+          <h1 className='font-semibold '>Pastries Category</h1>   
       </Link>
-      <h1 className='font-semibold '>Pastries Category</h1>
+
+        <h1 className='font-semibold'>Groceries Categories</h1>
+     
      <Link to='/pastry'>
      <h1 className='font-semibold cursor-pointer'>Vendors</h1>
      </Link> 

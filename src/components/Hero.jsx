@@ -5,10 +5,11 @@ const Hero = () => {
   return (
     <section className=" py-16 px-44 text-center">
       <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
-        Order Your Favorite Pastries Instantly on WhatsApp!
+        Order Your Favorite Pastries and Groceries Instantly on WhatsApp!
       </h1>
       <p className="text-lg md:text-xl mb-6 text-gray-600">
-        No app downloads. No stress. Just chat, choose, and enjoy.
+            Just chat, cart and enjoy
+        {/* No app downloads. No stress. Just chat, choose, and enjoy. */}
       </p>
       <a
         // href="https://wa.me/234XXXXXXXXXX?text=Hi%20I'm%20ready%20to%20order%20a%20pastry"

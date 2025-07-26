@@ -3,6 +3,7 @@ import { FaSignInAlt } from 'react-icons/fa'
 import OnboardingImage from '../assets/Onboarding.avif'
 import { Link } from 'react-router-dom'
 import { FaUser } from "react-icons/fa";
+import { TbBrandWhatsappFilled } from "react-icons/tb";
 
 const Onboarding = () => {
   return (
@@ -10,13 +11,25 @@ const Onboarding = () => {
       {/* Navbar */}
       <nav className="flex items-center justify-between text-[#113F67] h-20 shadow-lg md:px-10 px-3 ">
         <h1 className="md:text-2xl font-bold tracking-wider">CRISPBURST</h1>
+         
         
-        <Link to='/signup'>
-       <button className="flex items-center gap-2 bg-[#113F67] text-white font-medium p-2 md:px-4 md:py-2 rounded-lg shadow hover:bg-[#e6e6e6] transition">
+
+        <div className='flex justify-center items-center gap-4'>
+            <TbBrandWhatsappFilled className='text-4xl text-green-500'/>
+
+      <Link to='/signup'>
+
+             <button className="flex items-center gap-2 bg-[#113F67] text-white font-medium p-2 md:px-4 md:py-2 rounded-lg shadow hover:bg-[#e6e6e6] transition">
+        
           <FaUser />
+
           
         </button>
         </Link>
+
+        </div>
+
+      
        
       </nav>
 
@@ -33,9 +46,16 @@ const Onboarding = () => {
   </div>
 
   {/* Text Content Section */}
-  <div className="w-full md:w-[40%] flex flex-col justify-center items-center gap-4 py-8 text-center">
+  <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-4 py-8 text-center">
     <h2 className="font-semibold text-center text-3xl md:text-6xl">Welcome to CrispBurst!</h2>
-    <p className="text-lg md:text-2xl">Hot crust. Big taste. No stress</p>
+    <p className="text ">
+      What if ordering your pastries and groceries was easy as texting your friends? Now it is! 
+     <br /> <span className='font-bold text-sm'>
+       Introducing CRISPBURST, the first AI-powered ORDERING assistant
+      </span>
+      
+      
+      </p>
     <Link to="/signup">
       <button className="bg-[#113f67] text-white px-6 py-2 rounded hover:bg-blue-950 transition duration-300">
         Get Started

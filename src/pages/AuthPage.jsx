@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { TbBrandWhatsappFilled } from "react-icons/tb";
 
 const AuthPage = ({ type = 'signin' }) => {
   const navigate = useNavigate();
@@ -20,11 +21,17 @@ const AuthPage = ({ type = 'signin' }) => {
   return (
     <div className="min-h-screen bg-[#113F67] text-white flex flex-col md:flex-row items-center justify-center px-6 sm:px-12 py-12 gap-10">
       {/* Left Side (Branding) */}
-      <div className="hidden md:flex flex-col w-4/10 gap-4 justify-center">
+      <div className="hidden md:flex flex-col w-4/10 gap-4 items-center justify-center">
         <h1 className="text-4xl font-bold tracking-wide text-center">
           Welcome to CrispBurst
         </h1>
         <p className='text-center font-bold text-lg'>Hot crust. Big taste. No stress</p>
+        
+        <div className='flex cursor-pointer flex-col justify-center items-center'>
+            <TbBrandWhatsappFilled className='text-4xl text-green-500 '/>
+        <p className='text-gray-300 font-semibold w-3/4 text-center'>Order your Pastries and Groceries Instantly on Whatsapp</p>
+        </div>
+        
       </div>
 
       {/* Right Side (Form) */}
