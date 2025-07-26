@@ -9,11 +9,11 @@ import Logo from '../assets/Logo.jpg'
 
 const Onboarding = () => {
   return (
-    <div className="bg-[#113F67 text-[#113f67] flex flex-col gap-8 px-4 sm:px-10 md:px-20 ">
+    <div className="bg-[#113F67  text-[#2A1458]  flex flex-col gap-8 px-4 sm:px-10 md:px-20 ">
       {/* Navbar */}
-      <nav className="flex items-center justify-between text-[#113F67] h-20 shadow-lg md:px-10 px-3 ">
-        <h1 className="md:text-2xl font-bold tracking-wider">CRISPBURST</h1>
-         
+      <nav className="flex items-center bg-[#0e0524] justify-between text-[#113F67 text-white h-20 shadow-lg md:px-10 px-3 ">
+        {/* <h1 className="md:text-2xl font-bold tracking-wider">CRISPBURST</h1> */}
+         <img src={Logo} alt="" className='h-10' />
         
 
         <div className='flex justify-center items-center gap-4'>
@@ -21,7 +21,7 @@ const Onboarding = () => {
 
       <Link to='/signup'>
 
-             <button className="flex items-center gap-2 bg-[#113F67] text-white font-medium p-2 md:px-4 md:py-2 rounded-lg shadow hover:bg-[#e6e6e6] transition">
+             <button className="flex items-center gap-2 bg-[#113F67 bg-white bg-[#2A1458 text-[#2A1458] text-whit font-medium p-2 md:px-4 md:py-2 rounded-lg shadow hover:bg-[#e6e6e6] transition">
         
           <FaUser />
 
@@ -65,7 +65,7 @@ const Onboarding = () => {
       
       </p>
     <Link to="/signup">
-      <button className="bg-[#113f67] text-white px-6 py-2 rounded hover:bg-blue-950 transition duration-300">
+      <button className="bg-[#2A1458] text-white px-6 py-2 rounded hover:bg-blue-950 transition duration-300">
         Get Started
       </button>
     </Link>
