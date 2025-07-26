@@ -19,7 +19,7 @@ const AuthPage = ({ type = 'signin' }) => {
   };
 
   return (
-    <div className="min-h-screen bg-[#113F67] text-white flex flex-col md:flex-row items-center justify-center px-6 sm:px-12 py-12 gap-10">
+    <div className="min-h-screen bg-[#113F67 bg-[#2A1458] text-white flex flex-col md:flex-row items-center justify-center px-6 sm:px-12 py-12 gap-10">
       {/* Left Side (Branding) */}
       <div className="hidden md:flex flex-col w-4/10 gap-4 items-center justify-center">
         <h1 className="text-4xl font-bold tracking-wide text-center">
@@ -86,7 +86,7 @@ const AuthPage = ({ type = 'signin' }) => {
 
           <button
             type="submit"
-            className="bg-[#113F67] text-white py-3 rounded-md font-medium hover:bg-[#0e3556] transition"
+            className="bg-[#113F67 bg-[#2A1458] text-white py-3 rounded-md font-medium hover:bg-[#0e3556] transition"
           >
             {type === 'signin' ? 'Login' : 'Register'}
           </button>

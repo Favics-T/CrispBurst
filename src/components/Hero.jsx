@@ -7,8 +7,24 @@ const Hero = () => {
       <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
         Order Your Favorite Pastries and Groceries Instantly on WhatsApp!
       </h1>
-      <p className="text-lg md:text-xl mb-6 text-gray-600">
-            Just chat, cart and enjoy
+      <p className="text-lg md:text-[18px] font-semibold mb-6 text-gray-600">
+        <span className="">
+          What if ordering your pastries and groceries was as easy as texting your friends? 
+
+Now it is! <br />
+<span className="font-bold">
+  Introducing CRISPBURST, the first AI-powered ORDERING assistant on WhatsApp!
+  </span> 
+  <span className="block text-sm mt-4">
+
+
+ No App downloads, No stress. Just chat, Cart and Enjoy
+  </span>
+ 
+        </span>
+           
+
+          
         {/* No app downloads. No stress. Just chat, choose, and enjoy. */}
       </p>
       <a

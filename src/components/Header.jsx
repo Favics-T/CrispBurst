@@ -4,15 +4,21 @@ import { FaShoppingCart } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { TbBrandWhatsappFilled } from "react-icons/tb";
-
+import Logo from '../assets/Logo.jpg'
 
 const Header = ({onCartClick}) => {
   return (
     <div className=''>
-      <div className='flex items-center justify-between text-[#113F67] h-20 shadow-lg px-10'>
-     <Link to='/'>
-     <h1 className='text-2xl font-bold tracking-wider'>CrispBurst</h1>
-      </Link> 
+      <div className='flex items-center justify-between bg-[#021629] text-white text-[#113F67 h-20 shadow-lg px-10'>
+   
+   
+   <div className='flex gap-2'>
+     <img src={Logo} alt=""  className='h-10 '/>
+
+ <Link to='/'>
+     {/* <h1 className='text-2xl font-bold tracking-wider'>CrispBurst</h1> */}
+     </Link>
+        </div>     
 
      <div className='flex gap-6'>
       <Link to='/pastries'>

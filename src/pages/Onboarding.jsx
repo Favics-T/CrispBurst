@@ -4,6 +4,8 @@ import OnboardingImage from '../assets/Onboarding.avif'
 import { Link } from 'react-router-dom'
 import { FaUser } from "react-icons/fa";
 import { TbBrandWhatsappFilled } from "react-icons/tb";
+import Logo from '../assets/Logo.jpg'
+
 
 const Onboarding = () => {
   return (
@@ -38,6 +40,7 @@ const Onboarding = () => {
     <div className="flex flex-col md:flex-row items-center justify-center gap-4 px-4">
   {/* Image Section - Hidden on small screens */}
   <div className=" md:block md:w-[40%]">
+
     <img
       src={OnboardingImage}
       alt="Onboarding"
@@ -47,12 +50,17 @@ const Onboarding = () => {
 
   {/* Text Content Section */}
   <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-4 py-8 text-center">
+    <div className='-mt-'>
+<img src={Logo} alt="" className='h-10 ' />
+    </div>
+    
     <h2 className="font-semibold text-center text-3xl md:text-6xl">Welcome to CrispBurst!</h2>
-    <p className="text ">
-      What if ordering your pastries and groceries was easy as texting your friends? Now it is! 
+    <p className="text-2xl ">
+      {/* What if ordering your pastries and groceries was easy as texting your friends? Now it is! 
      <br /> <span className='font-bold text-sm'>
        Introducing CRISPBURST, the first AI-powered ORDERING assistant
-      </span>
+      </span> */}
+      Fresh in Every Taste
       
       
       </p>
